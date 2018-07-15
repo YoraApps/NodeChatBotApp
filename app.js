@@ -18,5 +18,6 @@ var testbot= new botbuilder.UniversalBot(testbotConnector);
 server.post('/api/messages',testbotConnector.listen());
 
 testbot.dialog('/',function(session){
-session.send('hi let me know how can i help you?')
+session.send('hi let me know how can i help you?');
+session.send('Welcome to Yora Technologies Pvt Ltd.');
 })
